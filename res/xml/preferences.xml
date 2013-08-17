@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen  xmlns:holo="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen  xmlns:holo="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
 <PreferenceCategory
             holo:title="Rastreo">
 
@@ -46,6 +46,14 @@
 	      holo:entryValues="@array/intervalo_panic_sms_values"
 	      holo:defaultValue="3"
 	    /> 
+	    <Preference holo:id="@+id/pref_legal"
+	        holo:title="Avisos Legals"
+	        holo:summary="Licencia GPL"
+	        />
+	    <Preference holo:id="@+id/pref_about"
+	        holo:title="Acerca de la Aplicación"
+	        />
+	    
 		<org.hansel.myAlert.Preferences.CerrarSesion holo:title="Cerrar Sesión"
 		    holo:summary="Al cerrar sesión se inhabilitará el botón de pánico"
 		    holo:id="@+id/pref_key_logout"
